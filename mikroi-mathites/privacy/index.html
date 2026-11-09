@@ -5,7 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="/assets/mark.svg" type="image/svg+xml">
 <title>Μικροί Μαθητές – Πολιτική απορρήτου</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 <style>
+  .brand { display: inline-flex; align-items: center; gap: calc(var(--s) * .32); color: #222830; text-decoration: none; }
+  .brand img { width: calc(var(--s) * 1.12); height: auto; display: block; }
+  .brand .bar { width: max(2px, calc(var(--s) * .022)); align-self: stretch; margin: calc(var(--s) * .12) 0; background: #0751FA; border-radius: 2px; }
+  .brand .words { font-weight: 400; font-family: Montserrat, -apple-system, sans-serif; line-height: .98; font-size: calc(var(--s) * .38); letter-spacing: -.01em; }
+  .brand .words b { display: block; font-weight: 700; font-size: 1.18em; }
   :root { color-scheme: light; }
   body { margin: 0; background: #F3F0FF; color: #212529; font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
   main { max-width: 760px; margin: 0 auto; padding: 32px 16px 56px; }
@@ -14,7 +22,6 @@
   h2 { color: #5F3DC4; font-size: 20px; margin: 28px 0 6px; }
   .date { color: #868E96; margin: 0 0 20px; }
   .top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
-  .top img { display: block; width: 150px; height: auto; }
   .lang a { color: #7048E8; }
   ul { padding-left: 22px; }
   hr { border: 0; border-top: 1px solid #E9ECEF; margin: 40px 0; }
@@ -22,7 +29,7 @@
 </head>
 <body>
 <main>
-<div class="top"><a href="/"><img src="/assets/logo.svg" alt="Project Simian" width="1120" height="450"></a><a class="lang" href="#en">English version below</a></div>
+<div class="top"><span style="--s: 64px"><a class="brand" href="/" aria-label="Project Simian"><img src="/assets/mark.svg" alt=""><span class="bar"></span><span class="words">Project<b>Simian</b></span></a></span><a class="lang" href="#en">English version below</a></div>
 <div class="card">
 <h1>Πολιτική απορρήτου</h1>
 <p class="date">Μικροί Μαθητές · Τελευταία ενημέρωση: 8 Νοεμβρίου 2026</p>
