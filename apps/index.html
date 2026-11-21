@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="el">
+<html lang="el" data-l="el">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,12 +25,16 @@ h1 em{font-style:normal;color:#c9853a}
 .app img{width:76px;height:76px;border-radius:18px;flex:none;box-shadow:0 4px 12px rgba(60,40,20,.2)}
 .app .t{flex:1;min-width:0}
 .app b{display:block;font-size:17px}
-.app span{display:block;color:var(--muted);font-size:13.5px;margin:2px 0 10px}
+.app .t>span{display:block;color:var(--muted);font-size:13.5px;margin:2px 0 10px}
 .btn{display:inline-block;background:var(--acc);color:#fff;text-decoration:none;font-weight:700;font-size:15px;border-radius:999px;padding:10px 18px}
 .btn.soon{background:#cfc4b4;color:#fff;pointer-events:none}
 .brandmark{width:64px;height:auto;display:block;margin:0 auto 8px}
 .social{display:flex;gap:12px;justify-content:center;margin-top:24px;flex-wrap:wrap}
 .social a{display:inline-flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line);color:var(--ink);text-decoration:none;font-weight:600;font-size:15px;border-radius:999px;padding:10px 18px;box-shadow:0 4px 12px rgba(60,40,20,.08)}
+html[data-l="el"] [lang="en"],html[data-l="en"] [lang="el"]{display:none!important}
+.lang{position:absolute;top:14px;right:16px;font-size:13px;font-weight:600}
+.lang a{color:var(--muted);text-decoration:none;padding:4px 6px;border-radius:8px}.lang a.on{color:var(--ink);background:var(--card);border:1px solid var(--line)}
+main{position:relative}
 .note{margin-top:26px;text-align:center;color:var(--muted);font-size:13.5px}
 .note strong{color:var(--ink)}
 footer{margin-top:22px;text-align:center;font-size:13px;color:var(--muted)}
@@ -39,32 +43,39 @@ footer a{color:var(--muted)}
 </head>
 <body>
 <main>
+ <div class="lang"><a href="?lang=el" data-k="el">ΕΛ</a> <a href="?lang=en" data-k="en">EN</a></div>
  <div class="top">
   <a href="/" aria-label="Project Simian"><img class="brandmark" src="/assets/mark.svg" alt=""></a>
   <div class="k">Project Simian</div>
-  <h1>Ήρεμες εφαρμογές για <em>παιδιά</em></h1>
-  <p>Φτιαγμένες στην Ελλάδα · χωρίς διαφημίσεις · στο App Store, για iPhone, iPad και Mac</p>
+  <h1><span lang="el">Ήρεμες εφαρμογές για <em>παιδιά</em></span><span lang="en">Calm apps for <em>children</em></span></h1>
+  <p><span lang="el">Φτιαγμένες στην Ελλάδα · χωρίς διαφημίσεις · στο App Store, για iPhone, iPad και Mac</span><span lang="en">Made in Greece · no ads · on the App Store, for iPhone, iPad and Mac</span></p>
  </div>
 
  <div class="app" style="--acc:#7b4fd6"><img src="img/mathites.png" alt="">
-  <div class="t"><b>Μικροί Μαθητές</b><span>Γράμματα, αριθμοί και πρώτες λέξεις με τη Σοφούλα · 3–7 ετών</span>
-  <a class="btn" href="https://apps.apple.com/app/id6833899356">Δοκίμασέ το τώρα →</a></div></div>
+  <div class="t"><b><span lang="el">Μικροί Μαθητές</span><span lang="en">Mikroi Mathites</span></b><span><span lang="el">Γράμματα, αριθμοί και πρώτες λέξεις με τη Σοφούλα · 3–7 ετών</span><span lang="en">Learn Greek letters, numbers and first words with Sofoula the owl · ages 3–7</span></span>
+  <a class="btn" href="https://apps.apple.com/app/id6833899356"><span lang="el">Δοκίμασέ το τώρα →</span><span lang="en">Try it now →</span></a></div></div>
 
  <div class="app" style="--acc:#4b3b8f"><img src="img/griffoi.png" alt="">
-  <div class="t"><b>Το Βιβλίο των Γρίφων</b><span>Κλασικοί γρίφοι λογικής σε χάρτινο pop-up βιβλίο · από 8 ετών</span>
-  <a class="btn" href="https://apps.apple.com/app/id6835185393">Δοκίμασέ το τώρα →</a></div></div>
+  <div class="t"><b><span lang="el">Το Βιβλίο των Γρίφων</span><span lang="en">Paper Riddles</span></b><span><span lang="el">Κλασικοί γρίφοι λογικής σε χάρτινο pop-up βιβλίο · από 8 ετών</span><span lang="en">Classic logic puzzles in a pop-up paper book · ages 8+</span></span>
+  <a class="btn" href="https://apps.apple.com/app/id6835185393"><span lang="el">Δοκίμασέ το τώρα →</span><span lang="en">Try it now →</span></a></div></div>
 
  <div class="app" style="--acc:#d0674a"><img src="img/paramythia.png" alt="">
-  <div class="t"><b>Παραμύθια σε Χάρτινο Βιβλίο</b><span>21 παραμύθια με αφήγηση, για πριν τον ύπνο · 4–9 ετών</span>
-  <a class="btn" href="https://apps.apple.com/app/id6836967024">Δοκίμασέ το τώρα →</a></div></div>
+  <div class="t"><b><span lang="el">Παραμύθια σε Χάρτινο Βιβλίο</span><span lang="en">Pop-up Fairy Tales</span></b><span><span lang="el">21 παραμύθια με αφήγηση, για πριν τον ύπνο · 4–9 ετών</span><span lang="en">21 fairy tales read aloud, for bedtime · ages 4–9</span></span>
+  <a class="btn" href="https://apps.apple.com/app/id6836967024"><span lang="el">Δοκίμασέ το τώρα →</span><span lang="en">Try it now →</span></a></div></div>
 
  <div class="app" style="--acc:#1f6a96"><img src="img/mythoi.png" alt="">
-  <div class="t"><b>Το Βιβλίο των Μύθων</b><span>Η ελληνική μυθολογία για παιδιά, σε χάρτινες σελίδες</span>
-  <a class="btn soon" aria-disabled="true">Έρχεται σύντομα</a></div></div>
+  <div class="t"><b><span lang="el">Το Βιβλίο των Μύθων</span><span lang="en">The Book of Myths</span></b><span><span lang="el">Η ελληνική μυθολογία για παιδιά, σε χάρτινες σελίδες</span><span lang="en">Greek mythology for children, in paper pages</span></span>
+  <a class="btn soon" aria-disabled="true"><span lang="el">Έρχεται σύντομα</span><span lang="en">Coming soon</span></a></div></div>
 
- <p class="note"><strong>Μία αγορά, μία φορά.</strong> Χωρίς συνδρομή: ξεκλειδώνει όλη την εφαρμογή, μαζί με ό,τι νέο προστεθεί στο μέλλον.</p>
+ <p class="note"><span lang="el"><strong>Μία αγορά, μία φορά.</strong> Χωρίς συνδρομή: ξεκλειδώνει όλη την εφαρμογή, μαζί με ό,τι νέο προστεθεί στο μέλλον.</span><span lang="en"><strong>One purchase, one time.</strong> No subscription: it unlocks the whole app, plus everything new we add in the future.</span></p>
  <div class="social"><a href="https://www.instagram.com/projectsimian/"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zM17.3 5.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4zM12 2c-2.7 0-3.1 0-4.1.1-3.4.2-5.6 2.3-5.8 5.8C2 8.9 2 9.3 2 12s0 3.1.1 4.1c.2 3.4 2.3 5.6 5.8 5.8 1 .1 1.4.1 4.1.1s3.1 0 4.1-.1c3.4-.2 5.6-2.3 5.8-5.8.1-1 .1-1.4.1-4.1s0-3.1-.1-4.1c-.2-3.4-2.3-5.6-5.8-5.8C15.1 2 14.7 2 12 2zm0 1.8c2.7 0 3 0 4 .1 2.5.1 3.9 1.4 4 4 .1 1 .1 1.3.1 4s0 3-.1 4c-.1 2.5-1.4 3.9-4 4-1 .1-1.3.1-4 .1s-3 0-4-.1c-2.6-.1-3.9-1.5-4-4-.1-1-.1-1.3-.1-4s0-3 .1-4c.1-2.6 1.4-3.9 4-4 1-.1 1.3-.1 4-.1z"/></svg> Instagram</a><a href="https://www.tiktok.com/@projectsimian"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M16.6 2h-3.4v13.4a2.9 2.9 0 1 1-2.9-2.9c.3 0 .6 0 .9.1V9.2a6.3 6.3 0 1 0 5.4 6.2V8.6a8 8 0 0 0 4.4 1.3V6.5a4.5 4.5 0 0 1-4.4-4.5z"/></svg> TikTok</a></div>
  <footer><a href="mailto:info@projectsimian.com">info@projectsimian.com</a> · <a href="/">projectsimian.com</a></footer>
 </main>
+<script>
+(function(){var q=new URLSearchParams(location.search).get('lang');var l=q||((navigator.languages&&navigator.languages[0])||navigator.language||'el').slice(0,2).toLowerCase();
+l=l==='el'?'el':'en';var h=document.documentElement;h.setAttribute('data-l',l);h.lang=l;
+document.querySelectorAll('.lang a').forEach(function(a){a.classList.toggle('on',a.dataset.k===l)});
+if(l==='en')document.title='Project Simian · Our apps';})();
+</script>
 </body>
 </html>
